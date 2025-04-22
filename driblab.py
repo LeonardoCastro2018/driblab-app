@@ -12,8 +12,8 @@ st.set_page_config(page_title="Análisis Driblab", layout="wide")
 # ======================
 @st.cache_data
 def cargar_datos():
-    df_fisico = pd.read_excel("C:/Users/Usuario/OneDrive/Documentos/River/2025/Proyectos/Driblab/Driblab_Argentina_2025_Fisico.xlsx")
-    df_eventos = pd.read_excel("C:/Users/Usuario/OneDrive/Documentos/River/2025/Proyectos/Driblab/Driblab_Argentina_2025.xlsx")
+    df_fisico = pd.read_excel("Driblab_Argentina_2025_Fisico.xlsx")
+    df_eventos = pd.read_excel("Driblab_Argentina_2025.xlsx")
 
     df_fisico.columns = df_fisico.columns.str.strip()
     df_eventos.columns = df_eventos.columns.str.strip()
